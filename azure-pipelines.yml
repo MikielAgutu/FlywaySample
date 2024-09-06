@@ -18,6 +18,6 @@ steps:
   inputs:
     script: 'flyway migrate'
   env:
-    FLYWAY_PUBLISH_RESULT: true
-    FLYWAY_EMAIL: mikiel.agutu@red-gate.com
-    FLYWAY_TOKEN: $(flyway_token)
+    FLYWAY_PUBLISH_RESULT: "true"
+    FLYWAY_EMAIL: "mikiel.agutu@red-gate.com"
+    FLYWAY_TOKEN: "$(flyway_token)"
