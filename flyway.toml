@@ -1,0 +1,7 @@
+[environments.main]
+url = "jdbc:h2:mem:some_db"
+displayName = "Development database"
+
+[flyway]
+environment = "main"
+locations = ["filesystem:./sql"]
