@@ -12,7 +12,7 @@ pool:
 steps:
 - task: flywayCliInstall@0
   inputs:
-    flywayVersion: '10.17.0'
+    flywayVersion: '10.17.3'
 
 - task: CmdLine@2
   inputs:
