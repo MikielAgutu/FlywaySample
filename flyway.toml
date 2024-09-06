@@ -7,4 +7,4 @@ environment = "main"
 locations = ["filesystem:./sql"]
 
 [ flyway.flywayServicePublish ]
-baseUri = "https://flywayservice-main.redgate-testing.com"
+baseUri = "https://flywayservice-main.redgate-testing.com/api"
