@@ -5,3 +5,6 @@ displayName = "Development database"
 [flyway]
 environment = "main"
 locations = ["filesystem:./sql"]
+
+[ flyway.flywayServicePublish ]
+baseUri = "https://flywayservice-main.redgate-testing.com"
