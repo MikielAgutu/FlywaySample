@@ -9,4 +9,11 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
+steps:
+- task: flywayCliInstall@0
+  inputs:
+    flywayVersion: '10.17.0'
 
+- task: CmdLine@2
+  inputs:
+    script: 'flyway migrate'
