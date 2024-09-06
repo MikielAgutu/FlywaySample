@@ -16,8 +16,11 @@ steps:
 
 - task: CmdLine@2
   inputs:
-    script: 'flyway migrate -X'
+    script: |
+      flyway migrate -environment=qa
+      flyway migrate -environment=prod
   env:
     FLYWAY_PUBLISH_RESULT: "true"
     FLYWAY_EMAIL: "mikiel.agutu@red-gate.com"
     FLYWAY_TOKEN: "$(flyway_token)"
+    
