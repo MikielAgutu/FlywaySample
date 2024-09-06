@@ -16,7 +16,7 @@ steps:
 
 - task: CmdLine@2
   inputs:
-    script: 'flyway migrate'
+    script: 'flyway migrate -X'
   env:
     FLYWAY_PUBLISH_RESULT: "true"
     FLYWAY_EMAIL: "mikiel.agutu@red-gate.com"
